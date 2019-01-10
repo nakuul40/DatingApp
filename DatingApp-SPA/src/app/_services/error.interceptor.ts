@@ -1,10 +1,10 @@
-import { Injectable } from '../../../node_modules/@angular/core';
+import { Injectable } from '@angular/core';
 // tslint:disable-next-line:max-line-length
-import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpErrorResponse, HTTP_INTERCEPTORS } from '../../../node_modules/@angular/common/http';
+import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpErrorResponse, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { Observable, throwError } from '../../../node_modules/rxjs';
-import { catchError } from '../../../node_modules/rxjs/operators';
-import { providerDef } from '../../../node_modules/@angular/core/src/view';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { providerDef } from '@angular/core/src/view';
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor {
